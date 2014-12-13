@@ -1,0 +1,49 @@
+Source: gcc-defaults-xtensa-lx106-cross
+Section: devel
+Priority: standard
+Maintainer: George Hopkins <george-hopkins@null.net>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16)
+
+#Package: cpp-xtensa-lx106-elf
+#Priority: optional
+#Architecture: any
+#Section: interpreters
+#Depends: cpp-4.8-xtensa-lx106-elf (>= 4.8.2), ${misc:Depends}
+#Suggests: cpp-doc
+#Description: The GNU C preprocessor (cpp) for Xtensa LX106 architecture
+# The GNU C preprocessor is a macro processor that is used automatically
+# by the GNU C compiler to transform programs before actual compilation.
+# .
+# This package has been separated from gcc for the benefit of those who
+# require the preprocessor but not the cross-compiler for Xtensa LX106
+# architecture.
+# .
+# This is a dependency package providing the default GNU C preprocessor for
+# Xtensa LX106 architecture.
+
+#Package: gcc-xtensa-lx106-elf
+#Priority: optional
+#Architecture: any
+#Depends: cpp-xtensa-lx106-elf (>= 4.8.2), gcc-4.8-multilib-xtensa-lx106-elf (>= 4.8.2), ${misc:Depends}
+#Suggests: make, manpages-dev, autoconf, automake1.9, libtool, flex, bison, gcc-doc
+#Description: The GNU C compiler for Xtensa LX106 architecture
+# This is the GNU C compiler, a fairly portable optimizing compiler for C.
+# .
+# This is a dependency package providing the default GNU C cross-compiler for
+# Xtensa LX106 architecture.
+
+Package: pkg-config-xtensa-lx106-elf
+Priority: optional
+Architecture: all
+Depends: pkg-config (>= 0.26), ${misc:Depends}
+Description: manage compile and link flags for libraries for Xtensa LX106
+ architecture pkg-config is a system for managing library compile and link
+ flags that works with automake and autoconf.
+ .
+ Increasingly libraries ship with ".pc" files that allow querying of the
+ compiler and linker flags needed to use them through the pkg-config(1)
+ program.
+ .
+ This is a dependency package providing cross pkg-config support for the
+ Xtensa LX106 architecture.
