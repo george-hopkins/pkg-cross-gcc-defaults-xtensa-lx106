@@ -1,5 +1,5 @@
-gcc-defaults-xtensa-lx106-cross (1.0) UNRELEASED; urgency=low
+cross-gcc-defaults-xtensa-lx106 (1.0) UNRELEASED; urgency=low
 
   * Initial release based on gcc-defaults-armhf-cross.
 
- -- George Hopkins <george-hopkins@null.net>  Sat, 13 Dec 2014 21:22:45 +0100
+ -- George Hopkins <george-hopkins@null.net>  Sat, 31 Dec 2014 20:17:21 +0100
